@@ -1,0 +1,101 @@
+{% load static %}
+<html>
+<head>
+  <title>
+    Login
+  </title>
+  <style>
+
+  .field{
+    color: black;
+    align: center;
+    margin-left: 15px;
+    margin-right: auto;
+
+  }
+  .error{
+    color:red;
+  }
+  .logo{
+    margin-left: 600px;
+  }
+img{
+  margin-top: 10px;
+}
+
+.header{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background-color:grey;
+  height:105px;
+  background:rgba(0,0,0,0.4);
+  margin-top: -10px;
+  font-size:80px;
+  color:white;
+  }
+
+  .home{
+  background-color: #ce93d8;
+  height:35px;
+  }
+
+  font{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size:20px;
+  }
+
+  sup{
+    color: #6A5ACD;
+  }
+.bock{
+  filter:blur(8px);
+}
+  #form {
+  background:rgba(255, 255, 255, 0.9);
+  border: 1px solid;
+  margin: 10% 40% 0% 40%;
+  padding: 20px 20px 50px 50px;
+  /* box-shadow:5px 10px 8px 10px grey; */
+}
+
+  </style>
+</head>
+<body class="back" style="background-image: url({% static 'image/login_bg2.jpg' %})">
+  <div class="header">
+      <span class="logo"><img src="{% static 'image/logom.jpeg' %}" style="width:120px;height:80px;">Moody Player</span>
+  </div>
+  <div id="form">
+    <h1>Let's Connect!!</h1>
+  {{ err }}
+  <form action="" method="post" >
+    <div class="container">
+     <div class="body">
+    {% csrf_token %}
+  {% for field in form %}
+    <div class="row">
+       <div class="col-md-2">
+         <div class="field">
+        {{ field.label_tag }}
+         <br>{{ field }}<br><br>
+        {% if field.help_text %}
+          <sup>{{ field.help_text }}</sup>
+        {% endif %}
+        <div class="error">
+        {{ field.errors }}
+      </div>
+
+       </div>
+</div>
+       </div>
+ {% endfor %}
+ <div class="field">
+   <br>
+  <input type="submit" value="login">
+
+
+</div>
+</div>
+</div>
+</div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NSS | SVNIT</title>
+{% load static %}
+<link href="{% static 'css/style2.css' %}" rel="stylesheet" type="text/css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 100) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("active");
+        }
+    });
+</script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <span class="logo"><img src="{% static 'image/nsslogo.jpeg' %}" style="float:top left;width:70px;height:65px;border-radius: 50%;" ><div class="title">NSS, NIT SURAT</div></span>
+        <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'team' %}">Team</a>  </li>
+        <li><a href="{% static '#' %}">Our Events</a>  </li>
+        <li><a href="#contact">Contact</a>  </li>
+        </ul>
+    </div>
+<div class="wrapper">
+    <h1>Our Major Events</h1>
+    <div class="event">
+      <div class="event_detail">
+        <div class="event_img">
+          <img src="{% static 'image/sp.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Swachchhata Pakhwada</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/smc.jpg' %}" alt="Team_image">
+          </div>
+          <h3>SMC quarter Visit</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/sports.jpg' %}" alt="Team_image">
+          </div>
+          <h3>Sports Event</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/covid.jpeg' %}" alt="Team_image">
+          </div>
+          <h3>Janta Curfew Awareness</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/campus.JPG' %}" alt="Team_image">
+          </div>
+          <h3>Campus Cleanup Drive</h3>
+        </div>
+          <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/plantation.jpg' %}" alt="Team_image">
+            </div>
+            <h3>Plantation Drive 2019</h3>
+        </div>
+          <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/tapi.jpg' %}" alt="Team_image">
+            </div>
+            <h3>River cleanup Drive</h3>
+        </div>
+          <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/school.jpeg' %}" alt="Team_image">
+            </div>
+            <h3>School Visit</h3>
+        </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/onlineplantation.jpeg' %}" alt="Team_image">
+          </div>
+          <h3>Plantation Drive 2020</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/corona.jpeg' %}" alt="Team_image">
+          </div>
+          <h3>Covid Awareness</h3>
+      </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/blood.jpeg' %}" alt="Team_image">
+          </div>
+          <h3>Blood Donation</h3>
+        </div>
+          <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/panel.jpeg' %}" alt="Team_image">
+            </div>
+            <h3>Panel Discussion</h3>
+        </div>
+        <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/eyecheck.jpeg' %}" alt="Team_image">
+            </div>
+            <h3>Eye Checkup</h3>
+        </div>
+        <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/school.jpeg' %}" alt="Team_image">
+            </div>
+            <h3>Yoga Day</h3>
+        </div>
+        <div class="event_detail">
+          <div class="event_img">
+            <img src="{% static 'image/school.jpeg' %}" alt="Team_image">
+          </div>
+          <h3>Engineer's Day</h3>
+        </div>
+      <div class="event_detail">
+            <div class="event_img">
+              <img src="{% static 'image/youthday.jpeg' %}" alt="Team_image">
+            </div>
+            <h3>National Youth Day</h3>
+      </div>
+
+  </div>
+  </div>
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    } else {
+    header.classList.remove("sticky");
+    }
+    }
+</script>
+
+  <body>
+</html>

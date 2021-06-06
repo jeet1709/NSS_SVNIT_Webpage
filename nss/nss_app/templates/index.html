@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>NSS | SVNIT</title>
+{% load static %}
+<link href="{% static 'css/style1.css' %}" rel="stylesheet" type="text/css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 100) {
+        $(".header").addClass("active");
+    } else {
+        //remove the background property so it comes transparent again (defined in your css)
+       $(".header").removeClass("active");
+    }
+});
+
+</script>
+
+</head>
+<body>
+          <div class="sec1" id="header">
+          <div class="header" id="myHeader">
+              <span class="logo"><img src="{% static 'image/nsslogo.jpeg' %}" style="float:top left;width:70px;height:65px;border-radius: 50%;" ><div class="title">NSS, NIT SURAT</div></span>
+              <ul>
+              <li><a href="#header" >Home</a></li>
+              <li><a href="#aboutus">About Us</a>  </li>
+              <li><a href="{% url 'team' %}">Team</a>  </li>
+              <li><a href="{% url 'gallery' %}">Our Events</a>  </li>
+              <li><a href="#contact">Latest Update</a>  </li>
+              </ul>
+          </div>
+              <div class="mySlides fade">
+                <img src="{% static 'image/activity1.jpeg'%}" style="width:100%;height:980px;">
+                <div class="text">binary Plantation</div>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="{% static 'image/activity2.jpeg' %}" style="width:100%;height:980px;">
+                <div class="text">Swachchhata Pakhwada</div>
+              </div>
+
+              <div class="mySlides fade">
+                <img src="{% static 'image/activity3.jpeg' %}" style="width:100%;height:980px;">
+                <div class="text">National Youth Day</div>
+              </div>
+              <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+          </div>
+          <div class="aboutus" id="aboutus">
+            <div class="writeup">
+            <div><h1>WHAT ARE WE?</h1><hr style="width:30%;border-top: 3px dashed blue;">
+              <p class="description">The Motto of NSS "Not Me But You", reflects the essence of democratic living and upholds the need for self-less service.
+                NSS NIT Surat is the NIT Surat chapter of the National Service Scheme, institutionalized under the Ministry of Youth Affairs & Sports Govt. of India.
+                It was established in Sept' 2017 and since then, we have been actively instilling the importance of social responsibility in the minds of students,
+                with sole aim to motivate students at NIT & IIIT Surat to indulge in nation building activities through various events and projects which are aimed towards the benefit of people in and around Surat City.
+                We share the belief that such activities are almost always means of great satisfaction and joy.
+                We have a volunteer base of around 200 students belonging to various disciplines and degrees of NIT and IIIT Surat.
+                Each member committed to work for the welfare and benefit of the society by having a sense of gratitude & responsibility towards our citizen and our country.
+                We work on a diverse range of social and environmental issues like blood donation, eye checkup camp at colleges, River cleanup, binary Planation and many other events.
+                 </p>
+              </div>
+            <div><h1>WHAT WE DO?</h1><hr style="width:30%;border-top: 3px dashed blue;">
+              <p class="description">The main objectives of National Service Scheme (NSS) are :
+                1) Understand the community in which they work
+                2) Understand themselves in relation to their community
+                3) Identify the needs and problems of the community and involve them in problem-solving
+                4) Develop among themselves a sense of social and civic responsibility
+                5) Utilise their knowledge in finding practical solutions to individual and community problems
+                6) Develop competence required for group-living and sharing of responsibilities
+                7) Gain skills in mobilising the community participation
+                8) Acquire leadership qualities and democratic attitudes
+                9) Develop capacity to meet emergencies and natural disasters and
+               10) Practise national integration and social harmony.</p>
+            </div>
+            <div><h1>MOTTO</h1><hr style="width:30%;border-top: 3px dashed blue;">
+              <p class="description">The Motto of NSS "Not Me But You", reflects the essence of democratic living and upholds the need for self-less service.
+                NSS helps the students development & appreciation to other person's point of view and also show consideration towards other living beings.
+                The philosophy of the NSS is a good doctrine in this motto,
+                which underlines on the belief that the welfare of an individual is ultimately dependent on the welfare of the society as a whole and therefore,
+                the NSS volunteers shall strive for the well-being of the society.</p>
+            </div>
+            <div><h1>LOGO</h1><hr style="width:30%;border-top: 3px dashed blue;">
+              <p class="description">The logo for the NSS has been based on the giant Rath Wheel of the world famous Konark Sun Temple (The Black Pagoda) situated in Orissa, India.
+                The Red & Blue colors contained in the logo motivate the NSS Volunteers to be active & energetic for the nation-building social activities.
+                The wheel portrays the cycle of creation, preservation and release and signifies the movement in life across time and space,
+                The wheel thus stands for continuity as well as change and implies the continuous striving of NSS for social change.</p>
+            </div>
+          </div>
+          </div>
+          <div class="container" id="contact">
+          <!-- <div class="bio">CONTACT US</div> -->
+          <!-- <div class="box"><img class="logo_box" src="{% static 'image/circle-cropped.png' %}">
+                   <div class="text1">ASK US</div>
+                   <div class="text2"><p> Send us your question(s)</p></div>
+          </div>
+          <div class="box"><img class="logo_box" src="{% static 'image/feedback1.png' %}">
+                  <div class="text1">FEEDBACK</div>
+                  <div class="text2"><p> Share your thoughts,comments and suggestions</p></div>
+          </div>
+          <div class="box"><img class="logo_box" src="{% static 'image/location1.png' %}">
+                <div class="text1">VISIT US</div>
+                <div class="text2"><p> SVNIT CAMPUS,ICCHANATH CIRCLE,DUMAS ROAD,SURAT,GUJARAT,INDIA</p><p>PIN-395007</p></div>
+          </div> -->
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div class="elfsight-app-26257e3b-e5cf-41f1-87fc-7484df81756b"></div>
+          <!-- <div class="text3">FOLLOW US AT:
+            <a href="https://www.facebook.com"><img border="0"  src="{% static 'image/fb.png' %}" width="30" height="30"></a>
+            <a href="https://www.instagram.com"><img border="0" src="{% static 'image/insta.jpeg' %}" width="30" height="30"></a>
+          </div> -->
+          </div>
+          <script type="text/javascript">
+          window.onscroll = function() {myFunction()};
+
+          var header = document.getElementById("myHeader");
+          var sticky = header.offsetTop;
+
+          function myFunction() {
+          if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+          } else {
+          header.classList.remove("sticky");
+          }
+          }
+          var slideIndex = 0;
+          showSlides();
+
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+          </script>
+
+        </body>
+</html>

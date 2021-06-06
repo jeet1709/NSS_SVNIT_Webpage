@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NSS | SVNIT</title>
+{% load static %}
+<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 100) {
+            $(".header").addClass("active");
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+           $(".header").removeClass("active");
+        }
+    });
+</script>
+</head>
+<body>
+    <div class="header" id="myHeader">
+        <span class="logo"><img src="{% static 'image/nsslogo.jpeg' %}" style="float:top left;width:70px;height:65px;border-radius: 50%;" ><div class="title">NSS, NIT SURAT</div></span>
+        <ul>
+        <li><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'team' %}">Team</a>  </li>
+        <li><a href="{% url 'gallery' %}">Our Events</a>  </li>
+        <li><a href="#contact">Contact</a>  </li>
+        </ul>
+    </div>
+<div class="wrapper">
+    <h1>Faculty Advisor</h1>
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/bademukundsir.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Dr. Bade Mukund H.</h3>
+        <p class="role">Asst. Professor, MED SVNIT</p>
+      </div>
+      </div>
+    <h1>Our Team 2020-21</h1>
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/tushar.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Tushar Rajkumar Sanwarey</h3>
+        <p class="role">STUDENT CONVENER</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/himanshi.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Himanshi Agrawal</h3>
+        <p class="role">STUDENT CO-CONVENER</p>
+       </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/vishwajeet.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Vishwajeet Dwivedy</h3>
+        <p class="role">FINANCE HEAD & DEVELOPER</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/neha.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Neha Garg</h3>
+        <p class="role">DOCUMENTATION HEAD</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/dev.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Dev Parihar</h3>
+        <p class="role">PR AND DESIGN HEAD</p>
+       </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/nikhil.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Nikhil Pandey</h3>
+        <p class="role">CHIEF EDITOR</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/sahu.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Aditya Sahu</h3>
+        <p class="role">CULTURAL HEAD</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/pulkit.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Pulkit Agrawal</h3>
+        <p class="role">TECHNICAL HEAD</p>
+        </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/yukta.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Yukta Shah</h3>
+        <p class="role">SOCIAL HEAD</p>
+      </div><div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/sudhanshu.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Sudhanshu Mall</h3>
+        <p class="role">SPORTS HEAD</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/hiralal.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Hiralal</h3>
+        <p class="role">NSS volunteer</p>
+    </div>
+    <div class="team_member">
+      <div class="team_img">
+        <img src="{% static 'image/prakhar.jpg' %}" alt="Team_image">
+      </div>
+      <h3>Prakhar Srivastava</h3>
+      <p class="role">NSS volunteer</p>
+  </div>
+  <div class="team_member">
+    <div class="team_img">
+      <img src="{% static 'image/kashyap.jpg' %}" alt="Team_image">
+    </div>
+    <h3>Kaahyap Soni</h3>
+    <p class="role">NSS volunteer</p>
+  </div>
+  <div class="team_member">
+    <div class="team_img">
+      <img src="{% static 'image/harsh.jpeg' %}" alt="Team_image">
+    </div>
+    <h3>Harsh Shukla</h3>
+    <p class="role">NSS volunteer</p>
+  </div>
+  <div class="team_member">
+    <div class="team_img">
+      <img src="{% static 'image/harshil.jpeg' %}" alt="Team_image">
+    </div>
+    <h3>Harshil Prajapati</h3>
+    <p class="role">NSS volunteer</p>
+  </div>
+  </div>
+    <h1>Our Alumni 2021 Batch</h1>
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/gulshan.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Gulshan Rana</h3>
+        <p class="mail">ranagulshan10@gmail.com</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/ankit.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Ankit Kumar</h3>
+        <p class="mail">ankitsingh8012000@gmail.com</p>
+       </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/vatsalam.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Vatsalam Prashant</h3>
+        <p class="mail">vatsalam@gmail.com</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/paresh.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Paresh Prajapati</h3>
+        <p class="mail">pareshnprajapati1234@gmail.com</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/abhisar.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Abhisar Waghmare</h3>
+        <p class="mail">abhisar97@gmail.com</p>
+       </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/rahul.jpg' %}" alt="Team_image">
+        </div>
+        <h3>Rahul arya</h3>
+        <p class="mail">rahul07arya@gmail.com</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/shyam.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Shyam Kumawat</h3>
+        <p class="mail">kumawat.shyam007@gmail.com</p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'image/.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>Indraj</h3>
+        <p class="mail">xyz@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+  <script type="text/javascript">
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    } else {
+    header.classList.remove("sticky");
+    }
+    }
+</script>
+
+  <body>
+</html>
